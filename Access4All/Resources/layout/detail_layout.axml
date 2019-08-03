@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:id="@+id/LinLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<ScrollView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/scrollView1">
+		<TableLayout
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:stretchColumns = "1">
+			<TextView
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:autoLink="web|phone"
+				android:linksClickable="true"
+				android:id="@+id/textView1" />
+		
+	<Button
+		android:id="@+id/mapsButton"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:text="Open location in maps"
+		android:contentDescription="Open the location address in maps"
+		android:textSize = "20sp"
+		android:textAlignment="center"
+		android:enabled="false"
+	/>
+	<Button
+		android:id="@+id/phoneButton"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:text="Call Establishment"
+		android:contentDescription="call the establishment"
+		android:textSize = "20sp"
+		android:textAlignment="center"
+		android:enabled="false"
+	/>
+	<Button
+		android:id="@+id/websiteButton"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:text="Visit Establishment's Website"
+		android:contentDescription="go to the establishment's website"
+		android:textSize = "20sp"
+		android:textAlignment="center"
+		android:enabled="false"
+	/>
+			</TableLayout>
+	</ScrollView>
+</LinearLayout>

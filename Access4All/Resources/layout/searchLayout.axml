@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<SearchView
+		android:minWidth="25px"
+		android:minHeight="40px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="0"
+		android:queryHint="Enter Location Name Here"
+		android:id="@+id/searchView1"
+		android:contentDescription="Search Query box"
+		android:importantForAccessibility="yes">
+	</SearchView>
+	<View
+		android:id="@+id/centerShim"
+		android:layout_height="match_parent"
+		android:layout_width="0dp"
+		android:visibility="invisible"
+		android:contentDescription="Empty Shim"
+		android:layout_centerHorizontal="true"/>
+	<Button
+		android:id="@+id/voiceSearch"
+		android:text="Voice Search"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_alignParentLeft="true"
+		android:layout_toLeftOf="@+id/centerShim"
+		android:contentDescription="Search Location names by Voice"
+		android:layout_alignParentBottom="true"
+		/>
+	<Button
+		android:id="@+id/nearMe"
+		android:text="Near Me"
+		android:layout_width="match_parent"
+		android:layout_height="68dp"
+		android:layout_alignParentRight="true"
+		android:contentDescription="Search for locations near you"
+		android:layout_above="@id/voiceSearch" 
+		/>
+	<Button
+		android:id="@+id/textSearch"
+		android:text="Text Search"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_alignParentRight="true"
+		android:contentDescription="Search Location names by Text"
+		android:layout_toRightOf="@+id/centerShim"
+		android:layout_alignParentBottom="true"
+		
+		/>
+	<ListView
+		android:id="@+id/searchResults"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/searchView1" 
+		/>
+</RelativeLayout>
